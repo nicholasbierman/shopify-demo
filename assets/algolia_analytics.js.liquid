@@ -71,7 +71,7 @@ function trackConversion() {
 
 // Track a conversion event when clicking the 'add to cart' button.
 // Change the query selector to be the correct one for your theme.
-const addToCartBtn = document.querySelector('YOUR_ADD_TO_CART_SELECTOR')
+const addToCartBtn = document.querySelector('product-form__submit')
 if (addToCartBtn) {
   addToCartBtn.addEventListener('click', function (e) {
     trackConversion()
