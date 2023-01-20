@@ -1,6 +1,7 @@
 {
   "current": {
     "card_color_scheme": "background-1",
+    "predictive_search_enabled": false,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -52,8 +53,8 @@
           "footer-2": {
             "type": "text",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "Algolia's Mission",
+              "subtext": "<p>To provide lightning fast, relevant search to your Shopify storefront. <\/p>"
             }
           }
         },
@@ -63,7 +64,7 @@
           "footer-2"
         ],
         "settings": {
-          "color_scheme": "background-2",
+          "color_scheme": "accent-2",
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": true,
