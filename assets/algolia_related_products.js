@@ -1,7 +1,7 @@
 import { relatedProducts } from "@algolia/recommend-js";
 import recommend from "@algolia/recommend";
 
-const recommendClient = recommend(
+function(algolia){const recommendClient = recommend(
   "U9UXVSI686",
   "920331fae729632bce0ec9d69a87e604"
 );
