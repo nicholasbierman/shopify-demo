@@ -15,7 +15,9 @@ function(algolia) {
         indexName,
         objectIDs: [currentObjectID],
         itemComponent({ item, createElement }) {
-            return createElement('div', )
+            return createElement('div', {}. [
+                createElement('img', )
+            ])
         },
     });
 } (window.algoliaShopify);
