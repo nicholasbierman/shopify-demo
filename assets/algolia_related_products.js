@@ -17,7 +17,7 @@ function(algolia) {
         itemComponent({ item, createElement }) {
             return createElement('div', {}. [
                 createElement('img', { src: item.product_image }),
-            createElement('p', {}, )
+            createElement('p', {}, item.title)
             ])
         },
     });
