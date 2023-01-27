@@ -6,7 +6,7 @@ function(algolia) {
         "U9UXVSI686",
         "920331fae729632bce0ec9d69a87e604"
     );
-    const indexName = "YOUR_INDEX_NAME";
+    const indexName = "shopify_products";
     const currentObjectID = "YOUR_OBJECT_ID";
 
     relatedProducts({
