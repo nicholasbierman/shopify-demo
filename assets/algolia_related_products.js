@@ -11,7 +11,7 @@ import recommend from "@algolia/recommend";
         container: "#relatedProducts",
         recommendClient,
         indexName,
-        objectIDs: [currentObjectID],
+        objectIDs: [42447757312255],
         itemComponent({ item, createElement }) {
             return createElement('div', {}. [
                 createElement('img', { src: item.product_image }),
