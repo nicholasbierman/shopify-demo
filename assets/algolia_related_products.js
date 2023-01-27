@@ -1,7 +1,5 @@
 import { relatedProducts } from "@algolia/recommend-js";
 import recommend from "@algolia/recommend";
-
-function(algolia) {
     const recommendClient = recommend(
         "U9UXVSI686",
         "920331fae729632bce0ec9d69a87e604"
@@ -20,5 +18,5 @@ function(algolia) {
             createElement('p', {}, item.title)
             ])
         },
-    });
-} (window.algoliaShopify);
+  });
+
