@@ -7,7 +7,7 @@ function(algolia) {
         "920331fae729632bce0ec9d69a87e604"
     );
     const indexName = "shopify_products";
-    const currentObjectID = "YOUR_OBJECT_ID";
+    const currentObjectID = "42447757312255";
 
     relatedProducts({
         container: "#relatedProducts",
