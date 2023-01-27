@@ -74,7 +74,17 @@
     }
   }
 
-  customElements.define('product-recommendations', ProductRecommendations);
+  class AlgoliaRecommendations extends ProductRecommendations {
+  constructor() {
+    super();
+    
+  };
+
+
+  }
+  customElements.define('algolia-product-recommendations', AlgoliaProductRecommendations);
+
+
 {% endjavascript %}
 
 {% schema %}
