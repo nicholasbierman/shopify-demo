@@ -14,12 +14,8 @@ function(algolia) {
         recommendClient,
         indexName,
         objectIDs: [currentObjectID],
-        itemComponent({ item }) {
-            return (
-                <pre>
-                    <code>{JSON.stringify(item)}</code>
-                </pre>
-            );
+        itemComponent({ item, createElement }) {
+            return createElement('div', )
         },
     });
 } (window.algoliaShopify);
