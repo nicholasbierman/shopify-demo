@@ -1,8 +1,8 @@
 import { relatedProducts } from "@algolia/recommend-js";
 import recommend from "@algolia/recommend";
     const recommendClient = recommend(
-        "U9UXVSI686",
-        "920331fae729632bce0ec9d69a87e604"
+        "1DOHGYD1GO",
+        "c2fb46977f0dda6da0561a2ac5c1674a"
     );
     const indexName = "shopify_products";
     const currentObjectID = "42447757312255";
