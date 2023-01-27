@@ -16,7 +16,8 @@ function(algolia) {
         objectIDs: [currentObjectID],
         itemComponent({ item, createElement }) {
             return createElement('div', {}. [
-                createElement('img', )
+                createElement('img', { src: item.product_image }),
+            createElement('p', {}, )
             ])
         },
     });
