@@ -1,7 +1,7 @@
 // import { relatedProducts } from "@algolia/recommend-js";
 // import recommend from "@algolia/recommend";
 
-(function(algolia) {}
+(function (algolia) {
     const recommendClient = recommend(
         "1DOHGYD1GO",
         "c2fb46977f0dda6da0561a2ac5c1674a"
@@ -17,7 +17,8 @@
         itemComponent({ item, createElement }) {
             return createElement('div', {}, [
                 createElement('img', { src: item.product_image }),
-            createElement('p', {}, item.title)
+                createElement('p', {}, item.title)
             ])
         },
-  });
+    })
+}()
