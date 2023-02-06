@@ -20,4 +20,4 @@ import recommend from "@algolia/recommend";
         },
   });
 
-const recommendClient
+const recommendClient = recommend()
