@@ -6,7 +6,7 @@
 
     const recommendClient = recommend(
         algolia.config.app_id,
-        "c2fb46977f0dda6da0561a2ac5c1674a"
+        algolia.config.search_api_key
     );
     const indexName = "shopify_products";
     const currentObjectID = "42447757312255";
