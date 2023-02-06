@@ -13,7 +13,7 @@
         container: "#relatedProducts",
         recommendClient,
         indexName,
-        objectIDs: [currentObjectID],
+        objectIDs: currentObjectID,
         itemComponent({ item, createElement }) {
             return createElement('div', {}, [
                 createElement('img', { src: item.product_image }),
