@@ -13,10 +13,11 @@ import recommend from "@algolia/recommend";
         indexName,
         objectIDs: [42447757312255],
         itemComponent({ item, createElement }) {
-            return createElement('div', {}. [
+            return createElement('div', {}, [
                 createElement('img', { src: item.product_image }),
             createElement('p', {}, item.title)
             ])
         },
   });
 
+const recommendClient
