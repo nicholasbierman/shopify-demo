@@ -2,6 +2,8 @@
 // import recommend from "@algolia/recommend";
 
 (function (algolia) {
+    const appID = algolia.config.app_id;
+    
     const recommendClient = recommend(
         "1DOHGYD1GO",
         "c2fb46977f0dda6da0561a2ac5c1674a"
