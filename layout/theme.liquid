@@ -23,7 +23,7 @@
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
     <div id="relatedProducts">
-      <script src="{{ algolia_related_products.js | asset_url }}"></script>
+      <script src="{{ algolia_related_products.js | asset_url | script_tag}}"></script>
     </div>
 
     {% if page_description %}
