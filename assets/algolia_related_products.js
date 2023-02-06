@@ -15,7 +15,7 @@
         container: "#relatedProducts",
         recommendClient,
         indexName,
-        objectIDs: [42447757312255],
+        objectIDs: [currentObjectID],
         itemComponent({ item, createElement }) {
             return createElement('div', {}, [
                 createElement('img', { src: item.product_image }),
