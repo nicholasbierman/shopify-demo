@@ -7,15 +7,15 @@
         algolia.config.search_api_key
     );
     const indexName = "shopify_products";
-    const currentObjectID = ["42447757312255"];
+    const currentObjectID = "42447757312255";
 
     relatedProducts({
         container: "#relatedProducts",
         recommendClient,
         indexName,
-        objectIDs: currentObjectID,
+        objectIDs: [currentObjectID],
         itemComponent({ item, createElement }) {
-            return createElement('div', {}, [
+            return createElement('div', { class: 'ais-hits' }, [
                 createElement('img', { src: item.product_image }),
                 createElement('p', {}, item.title)
             ])
