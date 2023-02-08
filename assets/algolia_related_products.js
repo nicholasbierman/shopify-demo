@@ -15,7 +15,7 @@
         indexName,
         objectIDs: [currentObjectID],
         itemComponent({ item, createElement }) {
-            return createElement('div', { class: 'ais-hits' }, [
+            return createElement('div', {}, [
                 createElement('img', { src: item.product_image }),
                 createElement('p', {}, item.title)
             ])
