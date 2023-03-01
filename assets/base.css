@@ -2774,7 +2774,7 @@ details-disclosure > details {
   }
 }
 
-.auc-Recommend-container {
-  display: flex;
-  
+.auc-Recommend-item {
+  max-width: 1px;
+
 }
