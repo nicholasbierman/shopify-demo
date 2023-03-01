@@ -1,1 +1,3 @@
-export function 
+export function instantiateRecommendClient {
+    const recommendClient = recommend
+}
