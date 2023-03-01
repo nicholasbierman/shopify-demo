@@ -6,14 +6,16 @@
     algolia.config.app_id,
     algolia.config.search_api_key
   );
+/* TODO: add logic to read current indexName */
   const indexName = "shopify_products";
-  const currentObjectID = window.location.search.split("=")[1];
+    const currentObjectIDs = document.getElementsByClassName('cart-item');
+    console.log(currentObjectIDs)
   /* TODO: add logic to prevent variants of same item showing */
-  relatedProducts({
-    container: "#relatedProducts",
+  frequentlyBoughtTogether({
+    container: "#frequentlyBoughtTogether",
     recommendClient,
     indexName,
-    objectIDs: [currentObjectID],
+    objectID: ['42447759540479'],
     itemComponent({ item, createElement }) {
       console.log(item);
       return createElement("div", {}, [
