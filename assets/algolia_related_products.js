@@ -14,6 +14,7 @@
         indexName,
         objectIDs: [currentObjectID],
         itemComponent({ item, createElement }) {
+            console.log(item);
             return createElement('div', {}, [
                 createElement('img', { src: item.product_image }),
                 createElement('p', {}, item.title)
