@@ -8,6 +8,7 @@
     );
     const indexName = "shopify_products";
     const currentObjectID = window.location.search.split('=')[1];
+    if (!currentObjectID) return;
     /* TODO: add logic to prevent variants of same item showing */
     relatedProducts({
         container: "#relatedProducts",
