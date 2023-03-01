@@ -13,7 +13,11 @@
         recommendClient,
         indexName,
         objectIDs: [currentObjectID],
-        transformItems()
+        transformItems(items) {
+            items.forEach(item => {
+                
+            })
+        }
         itemComponent({ item, createElement }) {
             console.log(item);
             return createElement('div', {}, [
