@@ -8,6 +8,7 @@
     );
     const indexName = "shopify_products";
     const currentObjectID = window.location.search.split('=')[1]
+    console.log("CURRENTOBJECTID", currentObjectID)
 
     relatedProducts({
         container: "#relatedProducts",
