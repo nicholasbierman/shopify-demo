@@ -2773,3 +2773,8 @@ details-disclosure > details {
     }
   }
 }
+
+.auc-Recommend-item img {
+  max-width: 10px;
+
+}
