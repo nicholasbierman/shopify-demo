@@ -13,7 +13,6 @@
         container: "#relatedProducts",
         recommendClient,
         indexName,
-        view: horizontalSlider,
         objectIDs: [currentObjectID],
         itemComponent({ item, createElement }) {
             return createElement('div', {}, [
