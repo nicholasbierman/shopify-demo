@@ -13,6 +13,7 @@
         recommendClient,
         indexName,
         objectIDs: [currentObjectID],
+        transformItems()
         itemComponent({ item, createElement }) {
             console.log(item);
             return createElement('div', {}, [
