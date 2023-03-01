@@ -7,7 +7,7 @@
         algolia.config.search_api_key
     );
     const indexName = "shopify_products";
-    const currentObjectID = url
+    const currentObjectID = window.location
 
     relatedProducts({
         container: "#relatedProducts",
