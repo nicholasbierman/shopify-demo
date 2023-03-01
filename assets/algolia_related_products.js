@@ -7,17 +7,13 @@
         algolia.config.search_api_key
     );
     const indexName = "shopify_products";
-    const currentObjectID = window.location.search.split('=')[1]
+    const currentObjectID = window.location.search.split('=')[1];
+    /* */
     relatedProducts({
         container: "#relatedProducts",
         recommendClient,
         indexName,
         objectIDs: [currentObjectID],
-        transformItems(items) {
-            items.forEach(item => {
-                if((item.))
-            })
-        }
         itemComponent({ item, createElement }) {
             console.log(item);
             return createElement('div', {}, [
