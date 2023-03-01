@@ -15,7 +15,7 @@
         objectIDs: [currentObjectID],
         transformItems(items) {
             items.forEach(item => {
-                if()
+                if((item.))
             })
         }
         itemComponent({ item, createElement }) {
