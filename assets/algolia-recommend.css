@@ -26,5 +26,6 @@
 
 .auc-Recommend-list {
     display: flex,
+    justify-content: center,
     
 }
