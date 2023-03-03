@@ -17,7 +17,7 @@
         objectIDs: [currentObjectID],
         queryParameters: {
             transformItems(items) {
-                return
+                return items.slice(0,)
             }
         },
         itemComponent({ item, createElement }) {
