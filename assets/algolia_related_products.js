@@ -16,9 +16,7 @@
         indexName,
         objectIDs: [currentObjectID],
         queryParameters: {
-            transformItems(items) {
-                return [items[0], items[1], items[2]]
-            }
+            hitsPerpage: 3,
         },
         itemComponent({ item, createElement }) {
             return createElement('div', {}, [
