@@ -15,10 +15,7 @@
         recommendClient,
         indexName,
         objectIDs: [currentObjectID],
-        queryParameters: {
-            hitsPerpage: 3,
-            page: 0,
-        },
+        maxRecommendations: 3,
         itemComponent({ item, createElement }) {
             return createElement('div', {}, [
                 createElement('img', { src: item.product_image }),
