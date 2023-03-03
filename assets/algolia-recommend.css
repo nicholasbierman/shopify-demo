@@ -28,9 +28,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    list-style: none;
 }
 
 .auc-Recommend-item img {
     max-width: 12em;
 }
+
+
 
