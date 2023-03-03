@@ -16,8 +16,10 @@
         indexName,
         objectIDs: [currentObjectID],
         queryParameters: {
-            transformItems()
-        }
+            transformItems(items) {
+                return
+            }
+        },
         itemComponent({ item, createElement }) {
             return createElement('div', {}, [
                 createElement('img', { src: item.product_image }),
