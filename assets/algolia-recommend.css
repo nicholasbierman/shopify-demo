@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --auc-primary-color: #9698c3;
     --auc-muted-color: #c4c4c4;
     --auc-dark-color: #0f0f0f;
@@ -22,4 +22,8 @@
     .auc-Recommend-list {
         grid-template-columns: repeat(5, 1fr);
     }
+} */
+
+.auc-Recommend-list {
+    
 }
