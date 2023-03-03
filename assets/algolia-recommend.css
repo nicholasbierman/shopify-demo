@@ -26,10 +26,11 @@
 
 .auc-Recommend-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .auc-Recommend-item img {
     max-width: 12em;
-    
 }
+
