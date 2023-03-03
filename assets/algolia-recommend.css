@@ -1,11 +1,11 @@
-:root {
+/* :root {
     --auc-primary-color: #9698c3;
     --auc-muted-color: #c4c4c4;
     --auc-dark-color: #0f0f0f;
 }
 
 .auc-Recommend-list {
-    display: grid;
+    display: flex;
     gap: 0.5rem;
     list-style: none;
     margin: 0;
@@ -22,4 +22,18 @@
     .auc-Recommend-list {
         grid-template-columns: repeat(5, 1fr);
     }
+} */
+
+.auc-Recommend-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
 }
+
+.auc-Recommend-item img {
+    max-width: 12em;
+}
+
+
+

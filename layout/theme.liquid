@@ -239,6 +239,7 @@
 <script type="text/template" id="template_algolia_instant_search_product">{% include 'algolia_instant_search_product.hogan' %}</script>
 <script type="text/template" id="template_algolia_instant_search_no_result">{% include 'algolia_instant_search_no_result.hogan' %}</script>
 {{ 'algolia_dependency_font-awesome-4-4-0.min.css' | asset_url | stylesheet_tag }}
+{{ 'algolia-recommend.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'algolia_externals.js' | asset_url }}" defer></script>
 {{ 'algolia_init.js' | asset_url | script_tag }}
 <script src="{{ 'algolia_analytics.js' | asset_url }}" defer></script>
@@ -250,12 +251,13 @@
 <script src="{{ 'algolia_instant_search.js' | asset_url }}" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/@algolia/recommend-js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@algolia/recommend"></script>
-<script>
-  const { frequentlyBoughtTogether, relatedProducts, trendingItems, trendingFacets } = window['@algolia/recommend-js'];
-  const recommend = window['@algolia/recommend'];
-</script>
 <script src="https://cdn.jsdelivr.net/npm/preact/dist/preact.min.js"></script>
 <script src=" {{ 'algolia_related_products.js' | asset_url }}" defer></script>
+<script defer>
+  const { frequentlyBoughtTogether, relatedProducts, trendingItems, trendingFacets } = window['@algolia/recommend-js'];
+  const recommend = window['@algolia/recommend'];
+  const { h } = window['preact']
+</script>
 
   <!-- /Algolia head -->
 
@@ -269,7 +271,8 @@
     {% section 'announcement-bar' %}
     {% section 'header' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      <div id="relatedProducts" class="auc-recommend-list"></div>
+      <div id="relatedProducts"></div>
+      <div id="frequentlyBoughtTogether"></div>
       {{ content_for_layout }}
     </main>
 
