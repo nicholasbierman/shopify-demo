@@ -17,6 +17,7 @@
         objectIDs: [currentObjectID],
         queryParameters: {
             hitsPerpage: 3,
+            page: 0,
         },
         itemComponent({ item, createElement }) {
             return createElement('div', {}, [
