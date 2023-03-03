@@ -250,13 +250,13 @@
 <script src="{{ 'algolia_instant_search.js' | asset_url }}" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/@algolia/recommend-js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@algolia/recommend"></script>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/preact/dist/preact.min.js"></script>
+<script src=" {{ 'algolia_related_products.js' | asset_url }}" defer></script>
+<script defer>
   const { frequentlyBoughtTogether, relatedProducts, trendingItems, trendingFacets } = window['@algolia/recommend-js'];
   const recommend = window['@algolia/recommend'];
   const { h } = window['preact.min.js']
 </script>
-<script src="https://cdn.jsdelivr.net/npm/preact/dist/preact.min.js"></script>
-<script src=" {{ 'algolia_related_products.js' | asset_url }}" defer></script>
 
   <!-- /Algolia head -->
 
