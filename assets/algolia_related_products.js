@@ -16,7 +16,7 @@
         indexName,
         objectIDs: [currentObjectID],
         maxRecommendations: 3,
-        itemComponent({ item, createElement }) {
+        itemComponent({ item, createElement, algolia }) {
             return createElement('div', {}, [
                 createElement('img', { src: item.product_image }),
                 createElement('p', { href: algolia.helpers.instantsearchLink(item) }, item.title)
