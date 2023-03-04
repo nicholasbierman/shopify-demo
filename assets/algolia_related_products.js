@@ -19,7 +19,7 @@
         itemComponent({ item, createElement }) {
             return createElement('div', {}, [
                 createElement('img', { src: item.product_image }),
-                createElement('p', {  }, item.title)
+                createElement('p', { href: algolia.helpers.instantsearchLink(item) }, item.title)
             ])
         },
     })
