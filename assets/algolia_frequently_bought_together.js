@@ -10,7 +10,7 @@
   const indexName = "shopify_products";
   const arrayOfCartProducts = document.querySelectorAll('.cart-item__name');
   const objectIDs = arrayOfCartProducts.map(product => {
-    product.attributes.href.value.split('=')
+    product.attributes.href.value.split('=')[1];
   })
   /* TODO: add logic to prevent variants of same item showing */
   frequentlyBoughtTogether({
