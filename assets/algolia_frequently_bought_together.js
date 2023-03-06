@@ -8,7 +8,7 @@
   );
 /* TODO: add logic to read current indexName */
   const indexName = "shopify_products";
-  const arrayOfCartProducts = document.querySelectorAll('.cart-item__details');
+  const arrayOfCartProducts = document.querySelectorAll('.cart-item__name');
   const objectIDs = arrayOfCartProducts.map(product => {
     product.innerHTML.split('variant=')[1]
   })
