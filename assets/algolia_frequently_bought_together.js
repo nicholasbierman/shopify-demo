@@ -9,6 +9,7 @@
 /* TODO: add logic to read current indexName */
   const indexName = "shopify_products";
   const arrayOfCartProducts = document.querySelectorAll('.cart-item__name');
+  if (!arrayOfCartProducts) return;
   const objectIDs = arrayOfCartProducts.map(product => {
     product.attributes.href.value.split('=')[1];
   })
