@@ -11,7 +11,7 @@
             "settings": {
               "text": "Welcome to Algolia X Shopify",
               "color_scheme": "accent-2",
-              "link": ""
+              "link": "https:\/\/www.algolia.com\/doc\/integration\/shopify\/getting-started\/quick-start\/?client=ruby"
             }
           }
         },
@@ -25,6 +25,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "accent-2",
+          "logo": "shopify:\/\/shop_images\/algolia_badge_square_blue_background.webp",
           "logo_width": 90,
           "logo_position": "middle-left",
           "menu": "main-menu",
