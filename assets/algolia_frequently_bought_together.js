@@ -8,8 +8,7 @@
   );
 /* TODO: add logic to read current indexName */
   const indexName = "shopify_products";
-    const currentObjectIDs = document.getElementsByClassName('cart-item');
-    console.log(currentObjectIDs)
+    const arrayOfCartProducts = document.querySelectorAll('.cart-')
   /* TODO: add logic to prevent variants of same item showing */
   frequentlyBoughtTogether({
     container: "#frequentlyBoughtTogether",
