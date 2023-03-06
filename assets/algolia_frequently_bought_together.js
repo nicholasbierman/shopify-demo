@@ -10,7 +10,7 @@
   const indexName = "shopify_products";
   const arrayOfCartProducts = document.querySelectorAll('.cart-item__details');
   const objectIDs = arrayOfCartProducts.map(product => {
-    product
+    product.innerHTML.split('variant=')[1]
   })
   /* TODO: add logic to prevent variants of same item showing */
   frequentlyBoughtTogether({
