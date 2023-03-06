@@ -9,7 +9,7 @@
 /* TODO: add logic to read current indexName */
   const indexName = "shopify_products";
   const arrayOfCartProducts = document.querySelectorAll('.cart-item__details');
-  arrayOfCartProducts.forEach(produ)
+  const objectIDs = arrayOfCartProducts.map()
   /* TODO: add logic to prevent variants of same item showing */
   frequentlyBoughtTogether({
     container: "#frequentlyBoughtTogether",
