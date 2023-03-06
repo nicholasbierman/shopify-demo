@@ -18,7 +18,7 @@
     container: "#frequentlyBoughtTogether",
     recommendClient,
     indexName,
-    objectID: objectIDs,
+    objectID: [objectIDs],
     itemComponent({ item, createElement }) {
       console.log(item);
       return createElement("div", {}, [
