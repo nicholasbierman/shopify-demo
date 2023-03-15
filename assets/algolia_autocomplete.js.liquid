@@ -23,6 +23,9 @@
             lastSearch = client.search(queue);
             queue = [];
           }
+          if(!queue.length) {
+            lastSearch = client.search('');
+          }
           return lastSearch;
         })
         .then((result) => {
