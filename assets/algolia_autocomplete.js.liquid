@@ -12,7 +12,7 @@
   );
 
   function createMultiQuerySource() {
-    let queue = [];
+    let queue = [''];
     let lastResults = [];
     let lastSearch = Promise.resolve();
 
@@ -22,9 +22,6 @@
           if (queue.length) {
             lastSearch = client.search(queue);
             queue = [];
-          }
-          if(!queue.length) {
-            lastSearch = client.search('');
           }
           return lastSearch;
         })
@@ -326,7 +323,7 @@
       var clickData = {
         index: datum._index,
         eventName: 'click',
-        queryID: datum._queryID,
+        queryID: datum._queryID,asdffddddd
         objectIDs: [datum.objectID],
         positions: [datum._position],
       };
