@@ -12,7 +12,7 @@
   );
 
   function createMultiQuerySource() {
-    let queue = [''];
+    let queue = [];
     let lastResults = [];
     let lastSearch = Promise.resolve();
 
@@ -260,6 +260,8 @@
     algolia.config.input_selector + ', .algolia-shopify-autocomplete',
     {
       debug: algolia.config.autocomplete_debug,
+      openOnFocus: true,
+      autoFocus: true,
       hint: false,
       appendTo: 'body',
       templates: {
@@ -323,7 +325,7 @@
       var clickData = {
         index: datum._index,
         eventName: 'click',
-        queryID: datum._queryID,asdffddddd
+        queryID: datum._queryID,
         objectIDs: [datum.objectID],
         positions: [datum._position],
       };
