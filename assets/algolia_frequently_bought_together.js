@@ -8,14 +8,17 @@
   );
 /* TODO: add logic to read current indexName */
   const indexName = "shopify_products";
-    const currentObjectIDs = document.getElementsByClassName('cart-item');
-    console.log(currentObjectIDs)
+  const arrayOfCartProducts = document.querySelectorAll('.cart-item__name');
+  if (!arrayOfCartProducts) return;
+  const objectIDs = arrayOfCartProducts.map(product => {
+    product.attributes.href.value.split('=')[1];
+  })
   /* TODO: add logic to prevent variants of same item showing */
   frequentlyBoughtTogether({
     container: "#frequentlyBoughtTogether",
     recommendClient,
     indexName,
-    objectID: [42447759540479],
+    objectID: [objectIDs],
     itemComponent({ item, createElement }) {
       console.log(item);
       return createElement("div", {}, [
