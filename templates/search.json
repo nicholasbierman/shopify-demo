@@ -1,1 +1,41 @@
-{"sections":{"main":{"type":"main-search","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-search",
+      "disabled": true,
+      "settings": {
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false,
+        "article_show_date": true,
+        "article_show_author": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1704238093610bf75d": {
+      "type": "apps",
+      "blocks": {
+        "25c1c902-df7b-42b1-95c4-0cb83f3eb19c": {
+          "type": "shopify:\/\/apps\/algolia-search-and-discovery\/blocks\/instantsearch\/57bb7f86-d5fe-4d43-96ca-3953324494cf",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "25c1c902-df7b-42b1-95c4-0cb83f3eb19c"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1704238093610bf75d"
+  ]
+}
